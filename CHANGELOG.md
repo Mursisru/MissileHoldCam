@@ -1,11 +1,12 @@
 # Changelog
 
-## 1.1.0
+## 1.0.1 — 2026-05-09
 
-- Takeoff theme plays **once per local aircraft possession**: after landing and taking off again in the **same** aircraft (same instance), the takeoff track no longer retriggers.
-- Switching to a **different** aircraft resets the state so the new plane’s first takeoff can still play its theme (when the game requests `takeoffMusic`).
-- Only patches `CrossFadeMusic` when the clip matches the current local aircraft’s `takeoffMusic` (avoids touching other cues that share the same bool pattern).
+- After the followed missile is destroyed, the camera **lingers** for **`PostExplosionHoldSeconds`** (default **1** s, unscaled time) before returning to the saved view. Set to **0** for immediate return.
 
-## 1.0.0
+## 1.0.0 — 2026-05-09
 
-- Initial release: Harmony prefix on `MusicManager.CrossFadeMusic` to allow per-aircraft takeoff music on every takeoff (local player).
+- **Build:** reference `UnityEngine.InputLegacyModule` for `Input.GetKey`. Config **`HoldKey`** is `KeyCode` (not `KeyboardShortcut`) for broader BepInEx/IDE compatibility. Camera state checks use `is Camera*State` patterns.
+- Initial release: hold a configurable key (default **V**) to follow your **most recently spawned** missile with the stock orbit camera; release to restore **aircraft + previous camera state** (cockpit / chase / orbit / relative / controlled).
+- Missiles tracked via `Unit.onRegisterMissile` / `onDeregisterMissile` on the local aircraft.
+- Key binding via **BepInEx Configuration Manager** (`com.at747.missileholdcam.cfg`), not the in-game controls menu.
