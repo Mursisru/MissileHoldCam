@@ -24,10 +24,18 @@ namespace MissileHoldCam_Engine
 
         internal static void Tick()
         {
-            if (!MissileHoldCamPlugin.Enabled.Value)
+            MissileHoldCamConfigCache.Refresh();
+            if (!MissileHoldCamConfigCache.Enabled)
             {
                 ForceRestoreIfNeeded();
                 TryUnbindAircraft();
+                return;
+            }
+
+            bool hold = IsHoldKeyPressed();
+            if (!_missileCamActive && !hold)
+            {
+                TryBindLocalAircraft();
                 return;
             }
 
@@ -44,13 +52,11 @@ namespace MissileHoldCam_Engine
                 return;
             }
 
-            bool hold = IsHoldKeyPressed();
-
             if (_missileCamActive)
             {
                 if (MissileLost(cam))
                 {
-                    float linger = MissileHoldCamPlugin.PostExplosionHoldSeconds.Value;
+                    float linger = MissileHoldCamConfigCache.PostExplosionHoldSeconds;
                     if (linger <= 0f)
                     {
                         _restoreAfterLossAtUnscaled = -1f;
@@ -109,7 +115,7 @@ namespace MissileHoldCam_Engine
 
         private static bool IsHoldKeyPressed()
         {
-            var k = MissileHoldCamPlugin.HoldKey.Value;
+            var k = MissileHoldCamConfigCache.HoldKey;
             return k != KeyCode.None && Input.GetKey(k);
         }
 

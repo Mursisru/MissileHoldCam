@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+.idea/
+Thumbs.db
+*.tmp
+
+# Local MSBuild paths (see Directory.Build.user.props.example)
+Directory.Build.user.props
+
+# OS / tooling
+.DS_Store
+*.log

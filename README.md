@@ -40,6 +40,9 @@ BepInEx plugin for **Nuclear Option**: **hold** a key (War Thunder–style) to m
 | Path | Purpose |
 |------|---------|
 | `MissileHoldCam_Engine/` | Plugin source and `.csproj` |
+| `AGENT_CONTEXT.md` | Maintainer / AI session notes (design + reverse-engineering context) |
+| `Directory.Build.props` | Default game install path for references |
+| `Directory.Build.user.props.example` | Template for a custom game path (gitignored copy: `Directory.Build.user.props`) |
 
 ## Manual test checklist
 

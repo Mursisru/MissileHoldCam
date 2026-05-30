@@ -9,7 +9,7 @@ namespace MissileHoldCam_Engine
     {
         public const string PluginGuid = "com.at747.missileholdcam";
         public const string PluginName = "Missile Hold Cam";
-        public const string PluginVersion = "1.0.1";
+        public const string PluginVersion = "1.0.2";
 
         internal static MissileHoldCamPlugin Instance { get; private set; }
 
