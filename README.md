@@ -2,12 +2,8 @@
 
 # Missile Hold Cam
 
-[![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/) [![BepInEx 5](https://img.shields.io/badge/Loader-BepInEx%205-orange)](https://docs.bepinex.dev/) [![Version](https://img.shields.io/badge/Version-1.0.2)]() [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
-
-
-BepInEx plugin for **Nuclear Option**: **hold** a key (War Thunder–style) to move the main camera onto your **latest** launched **missile** (stock **orbit** follow). **Release** the key to return to your aircraft and the **same camera mode** as before (cockpit, chase, orbit, relative, or controlled).
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/) [![BepInEx 5](https://img.shields.io/badge/Loader-BepInEx%205-orange)](https://docs.bepinex.dev/) [![Version](https://img.shields.io/badge/Version-1.0.2-green)](https://github.com/Mursisru/MissileHoldCam/releases/tag/v1.0.2)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/Mursisru/MissileHoldCam/blob/main/LICENSE)
 
 ## Download
 
