@@ -1,4 +1,9 @@
+**Developer:** Mursisru
+
 # Missile Hold Cam
+
+[![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/) [![BepInEx 5](https://img.shields.io/badge/Loader-BepInEx%205-orange)](https://docs.bepinex.dev/) [![Version](https://img.shields.io/badge/Version-0.0.0-green)]() [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
+
 
 BepInEx plugin for **Nuclear Option**: **hold** a key (War Thunder–style) to move the main camera onto your **latest** launched **missile** (stock **orbit** follow). **Release** the key to return to your aircraft and the **same camera mode** as before (cockpit, chase, orbit, relative, or controlled).
 
@@ -16,6 +21,9 @@ BepInEx plugin for **Nuclear Option**: **hold** a key (War Thunder–style) to m
 - Optional: **Configuration Manager** (BepInEx) to change the hold key in-game
 
 ## Install
+
+> [!IMPORTANT]
+> **BepInEx 5 (x64) required** - install [BepInEx](https://docs.bepinex.dev/) before this mod.
 
 1. Get **`MissileHoldCam_Engine.dll`** from Releases or build **Release** yourself.
 2. Copy it into `Nuclear Option\BepInEx\plugins\` (create the folder if needed).
@@ -60,3 +68,9 @@ BepInEx plugin for **Nuclear Option**: **hold** a key (War Thunder–style) to m
 ## Disclaimer
 
 Fan mod; not affiliated with Nuclear Option’s developers.
+
+---
+
+## Keywords
+
+nuclear-option, bepinex, harmony, mod, missileholdcam, csharp, unity

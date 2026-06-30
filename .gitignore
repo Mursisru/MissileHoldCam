@@ -13,3 +13,11 @@ Directory.Build.user.props
 # OS / tooling
 .DS_Store
 *.log
+libs/
+Directory.Build.props
+.cursorrules
+.cursor/
+ffmpeg.exe
+local_build_scripts/
+_buildroot/
+.debug/
