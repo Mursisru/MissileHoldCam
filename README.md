@@ -5,16 +5,19 @@
 [![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/) [![BepInEx 5](https://img.shields.io/badge/Loader-BepInEx%205-orange)](https://docs.bepinex.dev/) [![Version](https://img.shields.io/badge/Version-1.0.2-green)](https://github.com/Mursisru/MissileHoldCam/releases/tag/v1.0.2)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/Mursisru/MissileHoldCam/blob/main/LICENSE)
 
-## Download
 
-- **Prebuilt:** on GitHub, open **Releases** for this repository and download **`MissileHoldCam_Engine.dll`** (upload it when you cut a release).
-- **Source:** clone the repo and build **Release** (see **Build** below).
+---
 
-## Requirements
+## Critical warnings
 
-- Nuclear Option (Steam)
-- BepInEx 5 x64
-- Optional: **Configuration Manager** (BepInEx) to change the hold key in-game
+> [!IMPORTANT]
+> **BepInEx 5 (x64) required** - install [BepInEx](https://docs.bepinex.dev/articles/user_guide/installation/index.html) before this mod.
+
+> [!WARNING]
+> **Flight controls required** - inactive in map selection, encyclopedia, or TV camera; requires `flightControlsEnabled` and local aircraft as camera target.
+
+> [!NOTE]
+> **Hold key is config-only** - not integrated into the game's Rewired keybind screen (default **V** via Configuration Manager).
 
 ## Install
 
@@ -64,6 +67,17 @@
 ## Disclaimer
 
 Fan mod; not affiliated with Nuclear Option’s developers.
+
+## Download
+
+- **Prebuilt:** on GitHub, open **Releases** for this repository and download **`MissileHoldCam_Engine.dll`** (upload it when you cut a release).
+- **Source:** clone the repo and build **Release** (see **Build** below).
+
+## Requirements
+
+- Nuclear Option (Steam)
+- BepInEx 5 x64
+- Optional: **Configuration Manager** (BepInEx) to change the hold key in-game
 
 ---
 
